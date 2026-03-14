@@ -1,0 +1,268 @@
+[0.096s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.097s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7e0df9e775c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7e0df9e77350>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7e0df9e77350>>, mixin_verb=('build',))
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.132s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/hare/hare_ws'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_can) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_can) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_can) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_can) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_can) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_can) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_can) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_can) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_can) by extension 'ros'
+[0.159s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hare_can' with type 'ros.ament_cmake' and name 'hare_can'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_locomotion) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_locomotion) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_locomotion) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_locomotion) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_locomotion) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_locomotion) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_locomotion) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_locomotion) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_locomotion) by extension 'ros'
+[0.160s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hare_locomotion' with type 'ros.ament_cmake' and name 'hare_locomotion'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_msgs) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_msgs) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_msgs) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_msgs) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_msgs) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_msgs) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_msgs) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/hare_msgs) by extension 'ros'
+[0.161s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hare_msgs' with type 'ros.ament_cmake' and name 'hare_msgs'
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.179s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 289 installed packages in /opt/ros/jazzy
+[0.180s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_msgs' build argument 'cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_msgs' build argument 'cmake_target' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.218s] DEBUG:colcon.colcon_core.verb:Building package 'hare_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hare/hare_ws/build/hare_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hare/hare_ws/install/hare_msgs', 'merge_install': False, 'path': '/home/hare/hare_ws/src/hare_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_can' build argument 'cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_can' build argument 'cmake_target' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_can' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_can' build argument 'cmake_clean_cache' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_can' build argument 'cmake_clean_first' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_can' build argument 'cmake_force_configure' from command line to 'False'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_can' build argument 'ament_cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_can' build argument 'catkin_cmake_args' from command line to 'None'
+[0.218s] Level 5:colcon.colcon_core.verb:set package 'hare_can' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.218s] DEBUG:colcon.colcon_core.verb:Building package 'hare_can' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hare/hare_ws/build/hare_can', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hare/hare_ws/install/hare_can', 'merge_install': False, 'path': '/home/hare/hare_ws/src/hare_can', 'symlink_install': False, 'test_result_base': None}
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'hare_locomotion' build argument 'cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'hare_locomotion' build argument 'cmake_target' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'hare_locomotion' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'hare_locomotion' build argument 'cmake_clean_cache' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'hare_locomotion' build argument 'cmake_clean_first' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'hare_locomotion' build argument 'cmake_force_configure' from command line to 'False'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'hare_locomotion' build argument 'ament_cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'hare_locomotion' build argument 'catkin_cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'hare_locomotion' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.219s] DEBUG:colcon.colcon_core.verb:Building package 'hare_locomotion' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hare/hare_ws/build/hare_locomotion', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hare/hare_ws/install/hare_locomotion', 'merge_install': False, 'path': '/home/hare/hare_ws/src/hare_locomotion', 'symlink_install': False, 'test_result_base': None}
+[0.219s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.220s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.220s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hare/hare_ws/src/hare_msgs' with build type 'ament_cmake'
+[0.220s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hare/hare_ws/src/hare_msgs'
+[0.222s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.222s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.222s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.229s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hare/hare_ws/build/hare_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/hare/hare_ws/src/hare_msgs -DCMAKE_INSTALL_PREFIX=/home/hare/hare_ws/install/hare_msgs
+[0.943s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hare/hare_ws/build/hare_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/hare/hare_ws/src/hare_msgs -DCMAKE_INSTALL_PREFIX=/home/hare/hare_ws/install/hare_msgs
+[0.944s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hare/hare_ws/build/hare_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hare/hare_ws/build/hare_msgs -- -j12 -l12
+[0.985s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hare/hare_ws/build/hare_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hare/hare_ws/build/hare_msgs -- -j12 -l12
+[0.997s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hare/hare_ws/build/hare_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hare/hare_ws/build/hare_msgs
+[1.009s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hare_msgs)
+[1.009s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hare/hare_ws/build/hare_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hare/hare_ws/build/hare_msgs
+[1.011s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_msgs' for CMake module files
+[1.012s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_msgs' for CMake config files
+[1.012s] Level 1:colcon.colcon_core.shell:create_environment_hook('hare_msgs', 'cmake_prefix_path')
+[1.012s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/hook/cmake_prefix_path.ps1'
+[1.012s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/hook/cmake_prefix_path.dsv'
+[1.013s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/hook/cmake_prefix_path.sh'
+[1.013s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_msgs/bin'
+[1.013s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_msgs/lib/pkgconfig/hare_msgs.pc'
+[1.014s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages'
+[1.014s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_msgs/bin'
+[1.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/package.ps1'
+[1.015s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/package.dsv'
+[1.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/package.sh'
+[1.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/package.bash'
+[1.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/package.zsh'
+[1.016s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hare/hare_ws/install/hare_msgs/share/colcon-core/packages/hare_msgs)
+[1.017s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hare_msgs)
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_msgs' for CMake module files
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_msgs' for CMake config files
+[1.017s] Level 1:colcon.colcon_core.shell:create_environment_hook('hare_msgs', 'cmake_prefix_path')
+[1.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/hook/cmake_prefix_path.ps1'
+[1.018s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/hook/cmake_prefix_path.dsv'
+[1.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/hook/cmake_prefix_path.sh'
+[1.019s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_msgs/bin'
+[1.019s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_msgs/lib/pkgconfig/hare_msgs.pc'
+[1.019s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages'
+[1.019s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_msgs/bin'
+[1.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/package.ps1'
+[1.020s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/package.dsv'
+[1.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/package.sh'
+[1.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/package.bash'
+[1.021s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/package.zsh'
+[1.021s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hare/hare_ws/install/hare_msgs/share/colcon-core/packages/hare_msgs)
+[1.022s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hare/hare_ws/src/hare_can' with build type 'ament_cmake'
+[1.022s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hare/hare_ws/src/hare_can'
+[1.022s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.022s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.025s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hare/hare_ws/src/hare_locomotion' with build type 'ament_cmake'
+[1.026s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hare/hare_ws/src/hare_locomotion'
+[1.026s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.026s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.031s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hare/hare_ws/build/hare_can': AMENT_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/hare/hare_ws/src/hare_can -DCMAKE_INSTALL_PREFIX=/home/hare/hare_ws/install/hare_can
+[1.033s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hare/hare_ws/build/hare_locomotion': AMENT_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/hare/hare_ws/src/hare_locomotion -DCMAKE_INSTALL_PREFIX=/home/hare/hare_ws/install/hare_locomotion
+[2.110s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hare/hare_ws/build/hare_can' returned '0': AMENT_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/hare/hare_ws/src/hare_can -DCMAKE_INSTALL_PREFIX=/home/hare/hare_ws/install/hare_can
+[2.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hare/hare_ws/build/hare_can': AMENT_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hare/hare_ws/build/hare_can -- -j12 -l12
+[2.144s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hare/hare_ws/build/hare_locomotion' returned '0': AMENT_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/hare/hare_ws/src/hare_locomotion -DCMAKE_INSTALL_PREFIX=/home/hare/hare_ws/install/hare_locomotion
+[2.145s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hare/hare_ws/build/hare_locomotion': AMENT_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hare/hare_ws/build/hare_locomotion -- -j12 -l12
+[2.156s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hare/hare_ws/build/hare_can' returned '0': AMENT_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hare/hare_ws/build/hare_can -- -j12 -l12
+[2.158s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hare/hare_ws/build/hare_can': AMENT_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hare/hare_ws/build/hare_can
+[2.169s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hare_can)
+[2.170s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_can' for CMake module files
+[2.170s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hare/hare_ws/build/hare_can' returned '0': AMENT_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hare/hare_ws/build/hare_can
+[2.171s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_can' for CMake config files
+[2.171s] Level 1:colcon.colcon_core.shell:create_environment_hook('hare_can', 'cmake_prefix_path')
+[2.171s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hare/hare_ws/install/hare_can/share/hare_can/hook/cmake_prefix_path.ps1'
+[2.171s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hare/hare_ws/install/hare_can/share/hare_can/hook/cmake_prefix_path.dsv'
+[2.172s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hare/hare_ws/install/hare_can/share/hare_can/hook/cmake_prefix_path.sh'
+[2.172s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_can/bin'
+[2.172s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_can/lib/pkgconfig/hare_can.pc'
+[2.172s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_can/lib/python3.12/site-packages'
+[2.173s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_can/bin'
+[2.173s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_can/share/hare_can/package.ps1'
+[2.173s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hare/hare_ws/install/hare_can/share/hare_can/package.dsv'
+[2.173s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_can/share/hare_can/package.sh'
+[2.174s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_can/share/hare_can/package.bash'
+[2.174s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_can/share/hare_can/package.zsh'
+[2.174s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hare/hare_ws/install/hare_can/share/colcon-core/packages/hare_can)
+[2.175s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hare_can)
+[2.175s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_can' for CMake module files
+[2.175s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_can' for CMake config files
+[2.175s] Level 1:colcon.colcon_core.shell:create_environment_hook('hare_can', 'cmake_prefix_path')
+[2.176s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hare/hare_ws/install/hare_can/share/hare_can/hook/cmake_prefix_path.ps1'
+[2.176s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hare/hare_ws/install/hare_can/share/hare_can/hook/cmake_prefix_path.dsv'
+[2.176s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hare/hare_ws/install/hare_can/share/hare_can/hook/cmake_prefix_path.sh'
+[2.177s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_can/bin'
+[2.177s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_can/lib/pkgconfig/hare_can.pc'
+[2.177s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_can/lib/python3.12/site-packages'
+[2.177s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_can/bin'
+[2.177s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_can/share/hare_can/package.ps1'
+[2.178s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hare/hare_ws/install/hare_can/share/hare_can/package.dsv'
+[2.178s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_can/share/hare_can/package.sh'
+[2.178s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_can/share/hare_can/package.bash'
+[2.179s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_can/share/hare_can/package.zsh'
+[2.179s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hare/hare_ws/install/hare_can/share/colcon-core/packages/hare_can)
+[2.188s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hare/hare_ws/build/hare_locomotion' returned '0': AMENT_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hare/hare_ws/build/hare_locomotion -- -j12 -l12
+[2.190s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hare/hare_ws/build/hare_locomotion': AMENT_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hare/hare_ws/build/hare_locomotion
+[2.202s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hare_locomotion)
+[2.202s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_locomotion' for CMake module files
+[2.202s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hare/hare_ws/build/hare_locomotion' returned '0': AMENT_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hare/hare_ws/build/hare_locomotion
+[2.202s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_locomotion' for CMake config files
+[2.203s] Level 1:colcon.colcon_core.shell:create_environment_hook('hare_locomotion', 'cmake_prefix_path')
+[2.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/hook/cmake_prefix_path.ps1'
+[2.204s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/hook/cmake_prefix_path.dsv'
+[2.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/hook/cmake_prefix_path.sh'
+[2.204s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_locomotion/bin'
+[2.204s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_locomotion/lib/pkgconfig/hare_locomotion.pc'
+[2.204s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_locomotion/lib/python3.12/site-packages'
+[2.205s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_locomotion/bin'
+[2.205s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/package.ps1'
+[2.205s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/package.dsv'
+[2.206s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/package.sh'
+[2.206s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/package.bash'
+[2.206s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/package.zsh'
+[2.206s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hare/hare_ws/install/hare_locomotion/share/colcon-core/packages/hare_locomotion)
+[2.207s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hare_locomotion)
+[2.207s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_locomotion' for CMake module files
+[2.207s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_locomotion' for CMake config files
+[2.207s] Level 1:colcon.colcon_core.shell:create_environment_hook('hare_locomotion', 'cmake_prefix_path')
+[2.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/hook/cmake_prefix_path.ps1'
+[2.208s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/hook/cmake_prefix_path.dsv'
+[2.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/hook/cmake_prefix_path.sh'
+[2.209s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_locomotion/bin'
+[2.209s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_locomotion/lib/pkgconfig/hare_locomotion.pc'
+[2.209s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_locomotion/lib/python3.12/site-packages'
+[2.209s] Level 1:colcon.colcon_core.environment:checking '/home/hare/hare_ws/install/hare_locomotion/bin'
+[2.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/package.ps1'
+[2.210s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/package.dsv'
+[2.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/package.sh'
+[2.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/package.bash'
+[2.211s] INFO:colcon.colcon_core.shell:Creating package script '/home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/package.zsh'
+[2.211s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hare/hare_ws/install/hare_locomotion/share/colcon-core/packages/hare_locomotion)
+[2.211s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.212s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.212s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.212s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.217s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.217s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.217s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.229s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.230s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hare/hare_ws/install/local_setup.ps1'
+[2.231s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hare/hare_ws/install/_local_setup_util_ps1.py'
+[2.232s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hare/hare_ws/install/setup.ps1'
+[2.232s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hare/hare_ws/install/local_setup.sh'
+[2.233s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hare/hare_ws/install/_local_setup_util_sh.py'
+[2.233s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hare/hare_ws/install/setup.sh'
+[2.234s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hare/hare_ws/install/local_setup.bash'
+[2.234s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hare/hare_ws/install/setup.bash'
+[2.235s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hare/hare_ws/install/local_setup.zsh'
+[2.235s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hare/hare_ws/install/setup.zsh'

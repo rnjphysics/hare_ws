@@ -1,0 +1,433 @@
+[0.000000] (-) TimerEvent: {}
+[0.000176] (hare_msgs) JobQueued: {'identifier': 'hare_msgs', 'dependencies': OrderedDict()}
+[0.000213] (hare_can) JobQueued: {'identifier': 'hare_can', 'dependencies': OrderedDict({'hare_msgs': '/home/hare/hare_ws/install/hare_msgs'})}
+[0.000243] (hare_locomotion) JobQueued: {'identifier': 'hare_locomotion', 'dependencies': OrderedDict({'hare_msgs': '/home/hare/hare_ws/install/hare_msgs'})}
+[0.000268] (hare_msgs) JobStarted: {'identifier': 'hare_msgs'}
+[0.007226] (hare_msgs) JobProgress: {'identifier': 'hare_msgs', 'progress': 'cmake'}
+[0.007609] (hare_msgs) JobProgress: {'identifier': 'hare_msgs', 'progress': 'build'}
+[0.008220] (hare_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hare/hare_ws/build/hare_msgs', '--', '-j12', '-l12'], 'cwd': '/home/hare/hare_ws/build/hare_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hare', 'SSH_CLIENT': '100.124.132.100 52265 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hare', 'OLDPWD': '/home/hare/hare_ws/src/hare_msgs', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hare', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hare/hare_ws/build/hare_msgs', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '100.124.132.100 52265 100.102.253.43 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.034946] (hare_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099148] (-) TimerEvent: {}
+[0.199458] (-) TimerEvent: {}
+[0.238756] (hare_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.243822] (hare_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.289784] (hare_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.299610] (-) TimerEvent: {}
+[0.329132] (hare_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.399794] (-) TimerEvent: {}
+[0.500202] (-) TimerEvent: {}
+[0.600609] (-) TimerEvent: {}
+[0.701060] (-) TimerEvent: {}
+[0.801481] (-) TimerEvent: {}
+[0.880275] (hare_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[0.901688] (-) TimerEvent: {}
+[1.002033] (-) TimerEvent: {}
+[1.102381] (-) TimerEvent: {}
+[1.202766] (-) TimerEvent: {}
+[1.284911] (hare_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.302934] (-) TimerEvent: {}
+[1.403341] (-) TimerEvent: {}
+[1.503742] (-) TimerEvent: {}
+[1.604144] (-) TimerEvent: {}
+[1.704469] (-) TimerEvent: {}
+[1.804791] (-) TimerEvent: {}
+[1.820813] (hare_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.823373] (hare_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[1.904962] (-) TimerEvent: {}
+[1.955171] (hare_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[2.005142] (-) TimerEvent: {}
+[2.105572] (-) TimerEvent: {}
+[2.205954] (-) TimerEvent: {}
+[2.306342] (-) TimerEvent: {}
+[2.382983] (hare_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[2.406555] (-) TimerEvent: {}
+[2.412072] (hare_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.421259] (hare_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.422374] (hare_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.424626] (hare_msgs) StdoutLine: {'line': b'-- Configuring done (2.4s)\n'}
+[2.459911] (hare_msgs) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.470826] (hare_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/hare/hare_ws/build/hare_msgs\n'}
+[2.506641] (-) TimerEvent: {}
+[2.508331] (hare_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[2.517586] (hare_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_hare_msgs\n'}
+[2.606790] (-) TimerEvent: {}
+[2.707140] (-) TimerEvent: {}
+[2.711362] (hare_msgs) StdoutLine: {'line': b'[  1%] Built target hare_msgs__rosidl_generator_type_description\n'}
+[2.715938] (hare_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.716723] (hare_msgs) StdoutLine: {'line': b'creating hare_msgs.egg-info\n'}
+[2.722946] (hare_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.733627] (hare_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.734452] (hare_msgs) StdoutLine: {'line': b'writing hare_msgs.egg-info/PKG-INFO\n'}
+[2.734687] (hare_msgs) StdoutLine: {'line': b'writing dependency_links to hare_msgs.egg-info/dependency_links.txt\n'}
+[2.734856] (hare_msgs) StdoutLine: {'line': b'writing top-level names to hare_msgs.egg-info/top_level.txt\n'}
+[2.735030] (hare_msgs) StdoutLine: {'line': b"writing manifest file 'hare_msgs.egg-info/SOURCES.txt'\n"}
+[2.789193] (hare_msgs) StdoutLine: {'line': b"reading manifest file 'hare_msgs.egg-info/SOURCES.txt'\n"}
+[2.789660] (hare_msgs) StdoutLine: {'line': b"writing manifest file 'hare_msgs.egg-info/SOURCES.txt'\n"}
+[2.807291] (-) TimerEvent: {}
+[2.826291] (hare_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_hare_msgs_egg\n'}
+[2.907694] (-) TimerEvent: {}
+[3.008067] (-) TimerEvent: {}
+[3.021198] (hare_msgs) StdoutLine: {'line': b'[  5%] Built target hare_msgs__cpp\n'}
+[3.069204] (hare_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/hare_msgs__rosidl_generator_c.dir/rosidl_generator_c/hare_msgs/msg/detail/motor_command_array__description.c.o\x1b[0m\n'}
+[3.069517] (hare_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/hare_msgs__rosidl_generator_c.dir/rosidl_generator_c/hare_msgs/msg/detail/motor_command_array__type_support.c.o\x1b[0m\n'}
+[3.069656] (hare_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/hare_msgs__rosidl_generator_c.dir/rosidl_generator_c/hare_msgs/msg/detail/motor_command__description.c.o\x1b[0m\n'}
+[3.069751] (hare_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/hare_msgs__rosidl_generator_c.dir/rosidl_generator_c/hare_msgs/msg/detail/motor_command__functions.c.o\x1b[0m\n'}
+[3.070495] (hare_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/hare_msgs__rosidl_generator_c.dir/rosidl_generator_c/hare_msgs/msg/detail/motor_command__type_support.c.o\x1b[0m\n'}
+[3.070704] (hare_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/hare_msgs__rosidl_generator_c.dir/rosidl_generator_c/hare_msgs/msg/detail/motor_command_array__functions.c.o\x1b[0m\n'}
+[3.071356] (hare_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/hare_msgs__rosidl_generator_c.dir/rosidl_generator_c/hare_msgs/msg/detail/motor_state__description.c.o\x1b[0m\n'}
+[3.072427] (hare_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/hare_msgs__rosidl_generator_c.dir/rosidl_generator_c/hare_msgs/msg/detail/motor_state__type_support.c.o\x1b[0m\n'}
+[3.072688] (hare_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/hare_msgs__rosidl_generator_c.dir/rosidl_generator_c/hare_msgs/msg/detail/motor_state__functions.c.o\x1b[0m\n'}
+[3.108193] (-) TimerEvent: {}
+[3.132446] (hare_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking C shared library libhare_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[3.172835] (hare_msgs) StdoutLine: {'line': b'[ 24%] Built target hare_msgs__rosidl_generator_c\n'}
+[3.184276] (hare_msgs) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.184502] (hare_msgs) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.184628] (hare_msgs) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.184722] (hare_msgs) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.184814] (hare_msgs) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.184907] (hare_msgs) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.208363] (-) TimerEvent: {}
+[3.308737] (-) TimerEvent: {}
+[3.409058] (-) TimerEvent: {}
+[3.441314] (hare_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/hare_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hare_msgs/msg/motor_command_array__type_support.cpp.o\x1b[0m\n'}
+[3.441608] (hare_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/hare_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hare_msgs/msg/motor_state__type_support.cpp.o\x1b[0m\n'}
+[3.441755] (hare_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/hare_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/hare_msgs/msg/motor_command__type_support.cpp.o\x1b[0m\n'}
+[3.441866] (hare_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/hare_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hare_msgs/msg/motor_command__type_support.cpp.o\x1b[0m\n'}
+[3.441974] (hare_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/hare_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hare_msgs/msg/motor_command_array__type_support.cpp.o\x1b[0m\n'}
+[3.442082] (hare_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/hare_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hare_msgs/msg/motor_state__type_support.cpp.o\x1b[0m\n'}
+[3.488050] (hare_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/hare_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hare_msgs/msg/detail/motor_command_array__type_support.cpp.o\x1b[0m\n'}
+[3.488327] (hare_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/hare_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hare_msgs/msg/detail/motor_command__type_support.cpp.o\x1b[0m\n'}
+[3.489275] (hare_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/hare_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hare_msgs/msg/detail/motor_state__type_support.cpp.o\x1b[0m\n'}
+[3.502642] (hare_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/hare_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hare_msgs/msg/detail/motor_command__type_support.c.o\x1b[0m\n'}
+[3.505383] (hare_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/hare_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hare_msgs/msg/detail/motor_state__type_support.c.o\x1b[0m\n'}
+[3.505673] (hare_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/hare_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hare_msgs/msg/detail/motor_command_array__type_support.c.o\x1b[0m\n'}
+[3.505882] (hare_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking CXX shared library libhare_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.509201] (-) TimerEvent: {}
+[3.557631] (hare_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libhare_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.562275] (hare_msgs) StdoutLine: {'line': b'[ 61%] Built target hare_msgs__rosidl_typesupport_c\n'}
+[3.575724] (hare_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/hare_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hare_msgs/msg/detail/motor_command__type_support_c.cpp.o\x1b[0m\n'}
+[3.577830] (hare_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/hare_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hare_msgs/msg/detail/motor_command_array__type_support_c.cpp.o\x1b[0m\n'}
+[3.578121] (hare_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/hare_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hare_msgs/msg/detail/motor_state__type_support_c.cpp.o\x1b[0m\n'}
+[3.580251] (hare_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/hare_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hare_msgs/msg/detail/dds_fastrtps/motor_command_array__type_support.cpp.o\x1b[0m\n'}
+[3.580946] (hare_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/hare_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hare_msgs/msg/detail/dds_fastrtps/motor_command__type_support.cpp.o\x1b[0m\n'}
+[3.608698] (hare_msgs) StdoutLine: {'line': b'[ 70%] Built target hare_msgs__rosidl_typesupport_introspection_c\n'}
+[3.609304] (-) TimerEvent: {}
+[3.621609] (hare_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/hare_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hare_msgs/msg/detail/dds_fastrtps/motor_state__type_support.cpp.o\x1b[0m\n'}
+[3.709473] (-) TimerEvent: {}
+[3.809911] (-) TimerEvent: {}
+[3.913986] (-) TimerEvent: {}
+[3.927191] (hare_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libhare_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.988849] (hare_msgs) StdoutLine: {'line': b'[ 74%] Built target hare_msgs__rosidl_typesupport_cpp\n'}
+[3.989648] (hare_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libhare_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.014133] (-) TimerEvent: {}
+[4.094903] (hare_msgs) StdoutLine: {'line': b'[ 75%] Built target hare_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.114285] (-) TimerEvent: {}
+[4.214623] (-) TimerEvent: {}
+[4.216488] (hare_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libhare_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.241334] (hare_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libhare_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.266728] (hare_msgs) StdoutLine: {'line': b'[ 79%] Built target hare_msgs__rosidl_typesupport_fastrtps_c\n'}
+[4.314779] (-) TimerEvent: {}
+[4.331831] (hare_msgs) StdoutLine: {'line': b'[ 79%] Built target hare_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[4.352658] (hare_msgs) StdoutLine: {'line': b'[ 79%] Built target hare_msgs\n'}
+[4.373996] (hare_msgs) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.414938] (-) TimerEvent: {}
+[4.515328] (-) TimerEvent: {}
+[4.615756] (-) TimerEvent: {}
+[4.716142] (-) TimerEvent: {}
+[4.742851] (hare_msgs) StdoutLine: {'line': b'[ 81%] Built target hare_msgs__py\n'}
+[4.765438] (hare_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/hare_msgs__rosidl_generator_py.dir/rosidl_generator_py/hare_msgs/msg/_motor_command_array_s.c.o\x1b[0m\n'}
+[4.765760] (hare_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/hare_msgs__rosidl_generator_py.dir/rosidl_generator_py/hare_msgs/msg/_motor_state_s.c.o\x1b[0m\n'}
+[4.765998] (hare_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/hare_msgs__rosidl_generator_py.dir/rosidl_generator_py/hare_msgs/msg/_motor_command_s.c.o\x1b[0m\n'}
+[4.816305] (-) TimerEvent: {}
+[4.898252] (hare_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking C shared library libhare_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[4.916480] (-) TimerEvent: {}
+[4.940028] (hare_msgs) StdoutLine: {'line': b'[ 88%] Built target hare_msgs__rosidl_generator_py\n'}
+[4.960983] (hare_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/hare_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/hare_msgs/_hare_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.961257] (hare_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/hare_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/hare_msgs/_hare_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.961414] (hare_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/hare_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/hare_msgs/_hare_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.016628] (-) TimerEvent: {}
+[5.058043] (hare_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/hare_msgs/hare_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.058341] (hare_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/hare_msgs/hare_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.064258] (hare_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/hare_msgs/hare_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.090112] (hare_msgs) StdoutLine: {'line': b'[100%] Built target hare_msgs_s__rosidl_typesupport_introspection_c\n'}
+[5.090642] (hare_msgs) StdoutLine: {'line': b'[100%] Built target hare_msgs_s__rosidl_typesupport_c\n'}
+[5.098484] (hare_msgs) StdoutLine: {'line': b'[100%] Built target hare_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[5.113081] (hare_msgs) CommandEnded: {'returncode': 0}
+[5.114096] (hare_msgs) JobProgress: {'identifier': 'hare_msgs', 'progress': 'install'}
+[5.116765] (-) TimerEvent: {}
+[5.124886] (hare_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hare/hare_ws/build/hare_msgs'], 'cwd': '/home/hare/hare_ws/build/hare_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hare', 'SSH_CLIENT': '100.124.132.100 52265 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hare', 'OLDPWD': '/home/hare/hare_ws/src/hare_msgs', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hare', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hare/hare_ws/build/hare_msgs', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '100.124.132.100 52265 100.102.253.43 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[5.134304] (hare_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.134715] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/ament_index/resource_index/rosidl_interfaces/hare_msgs\n'}
+[5.135102] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/msg/MotorCommand.json\n'}
+[5.135224] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/msg/MotorCommandArray.json\n'}
+[5.135307] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/msg/MotorState.json\n'}
+[5.135390] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs\n'}
+[5.135548] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg\n'}
+[5.135639] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.135722] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/motor_command.h\n'}
+[5.135807] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail\n'}
+[5.135889] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command_array__type_support.c\n'}
+[5.136036] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_state__struct.h\n'}
+[5.136123] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command__functions.c\n'}
+[5.136206] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_state__functions.c\n'}
+[5.136288] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command_array__struct.h\n'}
+[5.136433] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command__type_support.h\n'}
+[5.136529] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command_array__functions.c\n'}
+[5.136617] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command__struct.h\n'}
+[5.136740] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command_array__type_support.h\n'}
+[5.136842] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command__description.c\n'}
+[5.136923] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command_array__functions.h\n'}
+[5.137047] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command__type_support.c\n'}
+[5.137132] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_state__description.c\n'}
+[5.137246] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command__functions.h\n'}
+[5.137346] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command_array__description.c\n'}
+[5.137447] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_state__type_support.h\n'}
+[5.137575] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_state__functions.h\n'}
+[5.137732] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_state__type_support.c\n'}
+[5.137861] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/motor_command_array.h\n'}
+[5.137987] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/motor_state.h\n'}
+[5.138105] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/environment/library_path.sh\n'}
+[5.138224] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/environment/library_path.dsv\n'}
+[5.138401] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/libhare_msgs__rosidl_generator_c.so\n'}
+[5.138949] (hare_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/hare/hare_ws/install/hare_msgs/lib/libhare_msgs__rosidl_generator_c.so" to ""\n'}
+[5.139037] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs\n'}
+[5.139189] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg\n'}
+[5.139276] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail\n'}
+[5.139361] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command_array__rosidl_typesupport_fastrtps_c.h\n'}
+[5.139444] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_state__rosidl_typesupport_fastrtps_c.h\n'}
+[5.139581] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command__rosidl_typesupport_fastrtps_c.h\n'}
+[5.139688] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.139767] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/libhare_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[5.140100] (hare_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/hare/hare_ws/install/hare_msgs/lib/libhare_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.140271] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs\n'}
+[5.140390] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg\n'}
+[5.140474] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.140576] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail\n'}
+[5.140714] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command__rosidl_typesupport_introspection_c.h\n'}
+[5.140802] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command_array__rosidl_typesupport_introspection_c.h\n'}
+[5.140882] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command_array__type_support.c\n'}
+[5.141010] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command__type_support.c\n'}
+[5.141097] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_state__rosidl_typesupport_introspection_c.h\n'}
+[5.141206] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_state__type_support.c\n'}
+[5.141330] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/libhare_msgs__rosidl_typesupport_introspection_c.so\n'}
+[5.141717] (hare_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/hare/hare_ws/install/hare_msgs/lib/libhare_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.141868] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/libhare_msgs__rosidl_typesupport_c.so\n'}
+[5.142156] (hare_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/hare/hare_ws/install/hare_msgs/lib/libhare_msgs__rosidl_typesupport_c.so" to ""\n'}
+[5.142299] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs\n'}
+[5.142385] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg\n'}
+[5.142502] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.142599] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail\n'}
+[5.142673] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command_array__type_support.hpp\n'}
+[5.142796] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command_array__struct.hpp\n'}
+[5.142931] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_state__builder.hpp\n'}
+[5.143058] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_state__traits.hpp\n'}
+[5.143180] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command_array__traits.hpp\n'}
+[5.143314] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_state__type_support.hpp\n'}
+[5.143438] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command__builder.hpp\n'}
+[5.143575] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command__traits.hpp\n'}
+[5.143698] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command_array__builder.hpp\n'}
+[5.143823] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_state__struct.hpp\n'}
+[5.143946] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command__struct.hpp\n'}
+[5.144046] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command__type_support.hpp\n'}
+[5.144165] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/motor_state.hpp\n'}
+[5.144287] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/motor_command_array.hpp\n'}
+[5.144399] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/motor_command.hpp\n'}
+[5.144543] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs\n'}
+[5.144661] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg\n'}
+[5.144743] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.144881] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail\n'}
+[5.144964] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.145049] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/dds_fastrtps\n'}
+[5.145188] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.145307] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.145384] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/libhare_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.145772] (hare_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/hare/hare_ws/install/hare_msgs/lib/libhare_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.145910] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs\n'}
+[5.145996] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg\n'}
+[5.146078] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail\n'}
+[5.146211] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_state__type_support.cpp\n'}
+[5.146296] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command__type_support.cpp\n'}
+[5.146376] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command_array__type_support.cpp\n'}
+[5.146508] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.146627] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.146717] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/include/hare_msgs/hare_msgs/msg/detail/motor_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.146816] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/libhare_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[5.147268] (hare_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/hare/hare_ws/install/hare_msgs/lib/libhare_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.147413] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/libhare_msgs__rosidl_typesupport_cpp.so\n'}
+[5.147795] (hare_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/hare/hare_ws/install/hare_msgs/lib/libhare_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[5.147906] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/environment/pythonpath.sh\n'}
+[5.148068] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/environment/pythonpath.dsv\n'}
+[5.148226] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs-0.0.0-py3.12.egg-info\n'}
+[5.148359] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[5.148448] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[5.148605] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[5.148692] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[5.148827] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs\n'}
+[5.148914] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/hare_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.149034] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/_hare_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.149172] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/__init__.py\n'}
+[5.149253] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/hare_msgs_s__rosidl_typesupport_c.so\n'}
+[5.149381] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/_hare_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[5.149554] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/msg\n'}
+[5.149641] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/msg/_motor_command.py\n'}
+[5.149771] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/msg/_motor_command_array.py\n'}
+[5.149853] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/msg/_motor_command_array_s.c\n'}
+[5.149992] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/msg/__init__.py\n'}
+[5.150096] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/msg/_motor_state.py\n'}
+[5.150214] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/msg/_motor_state_s.c\n'}
+[5.150334] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/msg/_motor_command_s.c\n'}
+[5.150455] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/_hare_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.150588] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/hare_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[5.187645] (hare_msgs) StdoutLine: {'line': b"Listing '/home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs'...\n"}
+[5.187982] (hare_msgs) StdoutLine: {'line': b"Compiling '/home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/__init__.py'...\n"}
+[5.188175] (hare_msgs) StdoutLine: {'line': b"Listing '/home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/msg'...\n"}
+[5.188262] (hare_msgs) StdoutLine: {'line': b"Compiling '/home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/msg/__init__.py'...\n"}
+[5.188342] (hare_msgs) StdoutLine: {'line': b"Compiling '/home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/msg/_motor_command.py'...\n"}
+[5.188414] (hare_msgs) StdoutLine: {'line': b"Compiling '/home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/msg/_motor_command_array.py'...\n"}
+[5.188484] (hare_msgs) StdoutLine: {'line': b"Compiling '/home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/msg/_motor_state.py'...\n"}
+[5.193967] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/hare_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.194715] (hare_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/hare_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.195165] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/hare_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[5.195641] (hare_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/hare_msgs_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.195836] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/hare_msgs_s__rosidl_typesupport_c.so\n'}
+[5.196265] (hare_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages/hare_msgs/hare_msgs_s__rosidl_typesupport_c.so" to ""\n'}
+[5.196440] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/lib/libhare_msgs__rosidl_generator_py.so\n'}
+[5.196797] (hare_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/hare/hare_ws/install/hare_msgs/lib/libhare_msgs__rosidl_generator_py.so" to ""\n'}
+[5.196950] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/msg/MotorCommand.idl\n'}
+[5.197044] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/msg/MotorCommandArray.idl\n'}
+[5.197138] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/msg/MotorState.idl\n'}
+[5.197254] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/msg/MotorCommand.msg\n'}
+[5.197381] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/msg/MotorCommandArray.msg\n'}
+[5.197557] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/msg/MotorState.msg\n'}
+[5.197702] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/ament_index/resource_index/package_run_dependencies/hare_msgs\n'}
+[5.197871] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/share/ament_index/resource_index/parent_prefix_path/hare_msgs\n'}
+[5.198020] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/environment/ament_prefix_path.sh\n'}
+[5.198121] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/environment/ament_prefix_path.dsv\n'}
+[5.198199] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/environment/path.sh\n'}
+[5.198311] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/environment/path.dsv\n'}
+[5.198385] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/local_setup.bash\n'}
+[5.198472] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/local_setup.sh\n'}
+[5.198561] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/local_setup.zsh\n'}
+[5.198679] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/local_setup.dsv\n'}
+[5.198758] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/package.dsv\n'}
+[5.198860] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/share/ament_index/resource_index/packages/hare_msgs\n'}
+[5.198936] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/export_hare_msgs__rosidl_generator_cExport.cmake\n'}
+[5.199017] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/export_hare_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.199139] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/export_hare_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.199237] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/export_hare_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.199314] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/hare_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.199404] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/hare_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.199514] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/hare_msgs__rosidl_typesupport_cExport.cmake\n'}
+[5.199685] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/hare_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.199841] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/export_hare_msgs__rosidl_generator_cppExport.cmake\n'}
+[5.200002] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/export_hare_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.200150] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/export_hare_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.200309] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/hare_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.200479] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/hare_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.200638] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/hare_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[5.200800] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/hare_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.200945] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/export_hare_msgs__rosidl_generator_pyExport.cmake\n'}
+[5.201085] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/export_hare_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.201264] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[5.201448] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.201636] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.201759] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.201921] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.202041] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.202197] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.202313] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/hare_msgsConfig.cmake\n'}
+[5.202436] (hare_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake/hare_msgsConfig-version.cmake\n'}
+[5.202514] (hare_msgs) StdoutLine: {'line': b'-- Installing: /home/hare/hare_ws/install/hare_msgs/share/hare_msgs/package.xml\n'}
+[5.205211] (hare_msgs) CommandEnded: {'returncode': 0}
+[5.217027] (-) TimerEvent: {}
+[5.224587] (hare_msgs) JobEnded: {'identifier': 'hare_msgs', 'rc': 0}
+[5.225939] (hare_can) JobStarted: {'identifier': 'hare_can'}
+[5.228636] (hare_locomotion) JobStarted: {'identifier': 'hare_locomotion'}
+[5.233468] (hare_can) JobProgress: {'identifier': 'hare_can', 'progress': 'cmake'}
+[5.234408] (hare_can) JobProgress: {'identifier': 'hare_can', 'progress': 'build'}
+[5.234908] (hare_can) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hare/hare_ws/build/hare_can', '--', '-j12', '-l12'], 'cwd': '/home/hare/hare_ws/build/hare_can', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hare', 'SSH_CLIENT': '100.124.132.100 52265 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/hare/hare_ws/install/hare_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hare', 'OLDPWD': '/home/hare/hare_ws/src/hare_msgs', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hare', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hare/hare_ws/build/hare_can', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '100.124.132.100 52265 100.102.253.43 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[5.236599] (hare_locomotion) JobProgress: {'identifier': 'hare_locomotion', 'progress': 'cmake'}
+[5.237494] (hare_locomotion) JobProgress: {'identifier': 'hare_locomotion', 'progress': 'build'}
+[5.237585] (hare_locomotion) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hare/hare_ws/build/hare_locomotion', '--', '-j12', '-l12'], 'cwd': '/home/hare/hare_ws/build/hare_locomotion', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hare', 'SSH_CLIENT': '100.124.132.100 52265 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/hare/hare_ws/install/hare_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hare', 'OLDPWD': '/home/hare/hare_ws/src/hare_msgs', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hare', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hare/hare_ws/build/hare_locomotion', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '100.124.132.100 52265 100.102.253.43 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[5.261673] (hare_can) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[5.262035] (hare_locomotion) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[5.317173] (-) TimerEvent: {}
+[5.417515] (-) TimerEvent: {}
+[5.463844] (hare_locomotion) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[5.465030] (hare_can) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[5.489240] (hare_locomotion) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[5.489907] (hare_can) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[5.497615] (hare_locomotion) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[5.498498] (hare_can) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[5.508259] (hare_locomotion) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.509103] (hare_can) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.517859] (-) TimerEvent: {}
+[5.520745] (hare_locomotion) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.521584] (hare_can) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.579956] (hare_locomotion) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[5.580508] (hare_can) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[5.580984] (hare_locomotion) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.581730] (hare_can) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.618020] (-) TimerEvent: {}
+[5.645055] (hare_locomotion) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.645855] (hare_can) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.705788] (hare_locomotion) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[5.706585] (hare_can) StdoutLine: {'line': b'-- Found hare_msgs: 0.0.0 (/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake)\n'}
+[5.715969] (hare_can) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[5.718115] (-) TimerEvent: {}
+[5.735335] (hare_locomotion) StdoutLine: {'line': b'-- Found hare_msgs: 0.0.0 (/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake)\n'}
+[5.744751] (hare_locomotion) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[5.805370] (hare_can) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.806224] (hare_can) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.806949] (hare_can) StdoutLine: {'line': b'-- Configuring done (0.5s)\n'}
+[5.812046] (hare_can) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[5.814385] (hare_can) StdoutLine: {'line': b'-- Build files have been written to: /home/hare/hare_ws/build/hare_can\n'}
+[5.818501] (-) TimerEvent: {}
+[5.834806] (hare_locomotion) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.835612] (hare_locomotion) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.836353] (hare_locomotion) StdoutLine: {'line': b'-- Configuring done (0.6s)\n'}
+[5.841301] (hare_can) CommandEnded: {'returncode': 0}
+[5.841777] (hare_locomotion) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[5.842113] (hare_can) JobProgress: {'identifier': 'hare_can', 'progress': 'install'}
+[5.842742] (hare_can) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hare/hare_ws/build/hare_can'], 'cwd': '/home/hare/hare_ws/build/hare_can', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hare', 'SSH_CLIENT': '100.124.132.100 52265 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/hare/hare_ws/install/hare_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hare', 'OLDPWD': '/home/hare/hare_ws/src/hare_msgs', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hare', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hare/hare_ws/build/hare_can', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '100.124.132.100 52265 100.102.253.43 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[5.844180] (hare_locomotion) StdoutLine: {'line': b'-- Build files have been written to: /home/hare/hare_ws/build/hare_locomotion\n'}
+[5.850512] (hare_can) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.850784] (hare_can) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_can/share/ament_index/resource_index/package_run_dependencies/hare_can\n'}
+[5.850872] (hare_can) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_can/share/ament_index/resource_index/parent_prefix_path/hare_can\n'}
+[5.851101] (hare_can) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/environment/ament_prefix_path.sh\n'}
+[5.851187] (hare_can) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/environment/ament_prefix_path.dsv\n'}
+[5.851261] (hare_can) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/environment/path.sh\n'}
+[5.851334] (hare_can) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/environment/path.dsv\n'}
+[5.851406] (hare_can) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/local_setup.bash\n'}
+[5.851478] (hare_can) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/local_setup.sh\n'}
+[5.851568] (hare_can) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/local_setup.zsh\n'}
+[5.851647] (hare_can) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/local_setup.dsv\n'}
+[5.851732] (hare_can) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/package.dsv\n'}
+[5.851806] (hare_can) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_can/share/ament_index/resource_index/packages/hare_can\n'}
+[5.851878] (hare_can) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/cmake/hare_canConfig.cmake\n'}
+[5.851950] (hare_can) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/cmake/hare_canConfig-version.cmake\n'}
+[5.852022] (hare_can) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/package.xml\n'}
+[5.852969] (hare_can) CommandEnded: {'returncode': 0}
+[5.862537] (hare_can) JobEnded: {'identifier': 'hare_can', 'rc': 0}
+[5.872652] (hare_locomotion) CommandEnded: {'returncode': 0}
+[5.873189] (hare_locomotion) JobProgress: {'identifier': 'hare_locomotion', 'progress': 'install'}
+[5.873642] (hare_locomotion) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hare/hare_ws/build/hare_locomotion'], 'cwd': '/home/hare/hare_ws/build/hare_locomotion', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hare', 'SSH_CLIENT': '100.124.132.100 52265 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/hare/hare_ws/install/hare_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/hare', 'OLDPWD': '/home/hare/hare_ws/src/hare_msgs', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'hare', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/hare/hare_ws/build/hare_locomotion', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '100.124.132.100 52265 100.102.253.43 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hare/hare_ws/install/hare_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/hare/hare_ws/install/hare_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[5.881704] (hare_locomotion) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.881917] (hare_locomotion) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/ament_index/resource_index/package_run_dependencies/hare_locomotion\n'}
+[5.882026] (hare_locomotion) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/ament_index/resource_index/parent_prefix_path/hare_locomotion\n'}
+[5.882122] (hare_locomotion) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/environment/ament_prefix_path.sh\n'}
+[5.882214] (hare_locomotion) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/environment/ament_prefix_path.dsv\n'}
+[5.882392] (hare_locomotion) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/environment/path.sh\n'}
+[5.882467] (hare_locomotion) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/environment/path.dsv\n'}
+[5.882553] (hare_locomotion) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/local_setup.bash\n'}
+[5.882642] (hare_locomotion) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/local_setup.sh\n'}
+[5.882716] (hare_locomotion) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/local_setup.zsh\n'}
+[5.882787] (hare_locomotion) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/local_setup.dsv\n'}
+[5.882858] (hare_locomotion) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/package.dsv\n'}
+[5.882930] (hare_locomotion) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/ament_index/resource_index/packages/hare_locomotion\n'}
+[5.883001] (hare_locomotion) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/cmake/hare_locomotionConfig.cmake\n'}
+[5.883072] (hare_locomotion) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/cmake/hare_locomotionConfig-version.cmake\n'}
+[5.883144] (hare_locomotion) StdoutLine: {'line': b'-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/package.xml\n'}
+[5.884564] (hare_locomotion) CommandEnded: {'returncode': 0}
+[5.893970] (hare_locomotion) JobEnded: {'identifier': 'hare_locomotion', 'rc': 0}
+[5.895220] (-) EventReactorShutdown: {}

@@ -1,0 +1,44 @@
+{
+  "package_name": "hare_msgs",
+  "output_dir": "/home/hare/hare_ws/build/hare_msgs/rosidl_generator_c/hare_msgs",
+  "template_dir": "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/home/hare/hare_ws/build/hare_msgs/rosidl_adapter/hare_msgs:msg/MotorCommand.idl",
+    "/home/hare/hare_ws/build/hare_msgs/rosidl_adapter/hare_msgs:msg/MotorCommandArray.idl",
+    "/home/hare/hare_ws/build/hare_msgs/rosidl_adapter/hare_msgs:msg/MotorState.idl"
+  ],
+  "ros_interface_files": [
+    "/home/hare/hare_ws/src/hare_msgs/msg/MotorCommand.msg",
+    "/home/hare/hare_ws/src/hare_msgs/msg/MotorCommandArray.msg",
+    "/home/hare/hare_ws/src/hare_msgs/msg/MotorState.msg"
+  ],
+  "target_dependencies": [
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/python3.12/site-packages/rosidl_generator_c/__init__.py",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/action__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/empty__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/full__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/home/hare/hare_ws/build/hare_msgs/rosidl_adapter/hare_msgs/msg/MotorCommand.idl",
+    "/home/hare/hare_ws/build/hare_msgs/rosidl_adapter/hare_msgs/msg/MotorCommandArray.idl",
+    "/home/hare/hare_ws/build/hare_msgs/rosidl_adapter/hare_msgs/msg/MotorState.idl"
+  ],
+  "type_description_tuples": [
+    "msg/MotorCommand.idl:/home/hare/hare_ws/build/hare_msgs/rosidl_generator_type_description/hare_msgs/msg/MotorCommand.json",
+    "msg/MotorCommandArray.idl:/home/hare/hare_ws/build/hare_msgs/rosidl_generator_type_description/hare_msgs/msg/MotorCommandArray.json",
+    "msg/MotorState.idl:/home/hare/hare_ws/build/hare_msgs/rosidl_generator_type_description/hare_msgs/msg/MotorState.json"
+  ]
+}

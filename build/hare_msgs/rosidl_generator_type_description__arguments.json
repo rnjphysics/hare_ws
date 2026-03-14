@@ -1,0 +1,9 @@
+{
+  "package_name": "hare_msgs",
+  "output_dir": "/home/hare/hare_ws/build/hare_msgs/rosidl_generator_type_description/hare_msgs",
+  "idl_tuples": [
+    "/home/hare/hare_ws/build/hare_msgs/rosidl_adapter/hare_msgs:msg/MotorCommand.idl",
+    "/home/hare/hare_ws/build/hare_msgs/rosidl_adapter/hare_msgs:msg/MotorCommandArray.idl",
+    "/home/hare/hare_ws/build/hare_msgs/rosidl_adapter/hare_msgs:msg/MotorState.idl"
+  ]
+}

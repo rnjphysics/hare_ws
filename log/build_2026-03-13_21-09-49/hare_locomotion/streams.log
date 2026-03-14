@@ -1,0 +1,27 @@
+[0.010s] Invoking command in '/home/hare/hare_ws/build/hare_locomotion': CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/home/hare/hare_ws/install/hare_locomotion:/home/hare/hare_ws/install/hare_can:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hare/hare_ws/build/hare_locomotion -- -j12 -l12
+[0.076s] [ 50%] [32mBuilding CXX object CMakeFiles/locomotion_node.dir/src/locomotion_node.cpp.o[0m
+[7.063s] [100%] [32m[1mLinking CXX executable locomotion_node[0m
+[7.403s] [100%] Built target locomotion_node
+[7.417s] Invoked command in '/home/hare/hare_ws/build/hare_locomotion' returned '0': CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/home/hare/hare_ws/install/hare_locomotion:/home/hare/hare_ws/install/hare_can:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hare/hare_ws/build/hare_locomotion -- -j12 -l12
+[7.418s] Invoking command in '/home/hare/hare_ws/build/hare_locomotion': CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/home/hare/hare_ws/install/hare_locomotion:/home/hare/hare_ws/install/hare_can:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hare/hare_ws/build/hare_locomotion
+[7.426s] -- Install configuration: ""
+[7.426s] -- Installing: /home/hare/hare_ws/install/hare_locomotion/lib/hare_locomotion/locomotion_node
+[7.431s] -- Set non-toolchain portion of runtime path of "/home/hare/hare_ws/install/hare_locomotion/lib/hare_locomotion/locomotion_node" to ""
+[7.431s] -- Installing: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/config
+[7.431s] -- Installing: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/config/locomotion.yaml
+[7.431s] -- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/ament_index/resource_index/package_run_dependencies/hare_locomotion
+[7.432s] -- Installing: /home/hare/hare_ws/install/hare_locomotion/share/ament_index/resource_index/parent_prefix_path/hare_locomotion
+[7.432s] -- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/environment/ament_prefix_path.sh
+[7.432s] -- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/environment/ament_prefix_path.dsv
+[7.432s] -- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/environment/path.sh
+[7.432s] -- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/environment/path.dsv
+[7.432s] -- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/local_setup.bash
+[7.433s] -- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/local_setup.sh
+[7.433s] -- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/local_setup.zsh
+[7.433s] -- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/local_setup.dsv
+[7.433s] -- Installing: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/package.dsv
+[7.433s] -- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/ament_index/resource_index/packages/hare_locomotion
+[7.433s] -- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/cmake/hare_locomotionConfig.cmake
+[7.433s] -- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/cmake/hare_locomotionConfig-version.cmake
+[7.433s] -- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/package.xml
+[7.434s] Invoked command in '/home/hare/hare_ws/build/hare_locomotion' returned '0': CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/home/hare/hare_ws/install/hare_locomotion:/home/hare/hare_ws/install/hare_can:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hare/hare_ws/build/hare_locomotion

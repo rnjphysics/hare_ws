@@ -1,0 +1,8 @@
+source;share/hare_locomotion/hook/cmake_prefix_path.ps1
+source;share/hare_locomotion/hook/cmake_prefix_path.dsv
+source;share/hare_locomotion/hook/cmake_prefix_path.sh
+source;share/hare_locomotion/local_setup.bash
+source;share/hare_locomotion/local_setup.dsv
+source;share/hare_locomotion/local_setup.ps1
+source;share/hare_locomotion/local_setup.sh
+source;share/hare_locomotion/local_setup.zsh

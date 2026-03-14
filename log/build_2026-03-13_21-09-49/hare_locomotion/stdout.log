@@ -1,0 +1,23 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/locomotion_node.dir/src/locomotion_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable locomotion_node[0m
+[100%] Built target locomotion_node
+-- Install configuration: ""
+-- Installing: /home/hare/hare_ws/install/hare_locomotion/lib/hare_locomotion/locomotion_node
+-- Set non-toolchain portion of runtime path of "/home/hare/hare_ws/install/hare_locomotion/lib/hare_locomotion/locomotion_node" to ""
+-- Installing: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/config
+-- Installing: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/config/locomotion.yaml
+-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/ament_index/resource_index/package_run_dependencies/hare_locomotion
+-- Installing: /home/hare/hare_ws/install/hare_locomotion/share/ament_index/resource_index/parent_prefix_path/hare_locomotion
+-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/environment/ament_prefix_path.sh
+-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/environment/path.sh
+-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/environment/path.dsv
+-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/local_setup.bash
+-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/local_setup.sh
+-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/local_setup.zsh
+-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/local_setup.dsv
+-- Installing: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/package.dsv
+-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/ament_index/resource_index/packages/hare_locomotion
+-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/cmake/hare_locomotionConfig.cmake
+-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/cmake/hare_locomotionConfig-version.cmake
+-- Up-to-date: /home/hare/hare_ws/install/hare_locomotion/share/hare_locomotion/package.xml

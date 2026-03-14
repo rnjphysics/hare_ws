@@ -1,0 +1,8 @@
+{
+  "package_name": "hare_msgs",
+  "non_idl_tuples": [
+    "/home/hare/hare_ws/src/hare_msgs:msg/MotorCommand.msg",
+    "/home/hare/hare_ws/src/hare_msgs:msg/MotorCommandArray.msg",
+    "/home/hare/hare_ws/src/hare_msgs:msg/MotorState.msg"
+  ]
+}

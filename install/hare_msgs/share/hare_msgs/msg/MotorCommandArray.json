@@ -1,0 +1,56 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "hare_msgs/msg/MotorCommandArray",
+      "fields": [
+        {
+          "name": "motors",
+          "type": {
+            "type_id": 145,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "hare_msgs/msg/MotorCommand"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "hare_msgs/msg/MotorCommand",
+        "fields": [
+          {
+            "name": "id",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "rpm",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "hare_msgs/msg/MotorCommandArray",
+      "hash_string": "RIHS01_1962fac64e0dd0cc9022885c58642eb77895940e26b153295570bbc1f972ac64"
+    },
+    {
+      "type_name": "hare_msgs/msg/MotorCommand",
+      "hash_string": "RIHS01_e49b0123234e80ada032d44f1355f2ef752d46897a6904bea0ae16b995d3abac"
+    }
+  ]
+}

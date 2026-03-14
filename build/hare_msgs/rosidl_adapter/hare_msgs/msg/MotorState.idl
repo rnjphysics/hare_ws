@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from hare_msgs/msg/MotorState.msg
+// generated code does not contain a copyright notice
+
+
+module hare_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Telemetry from a single VESC motor controller")
+    struct MotorState {
+      uint8 id;
+
+      int32 erpm;
+
+      float current;
+
+      float duty;
+
+      float temp_fet;
+
+      float temp_motor;
+
+      float input_current;
+
+      float voltage;
+
+      int32 tachometer;
+    };
+  };
+};

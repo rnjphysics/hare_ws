@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from hare_msgs/msg/MotorCommand.msg
+// generated code does not contain a copyright notice
+
+
+module hare_msgs {
+  module msg {
+    struct MotorCommand {
+      uint8 id;
+
+      int32 rpm;
+    };
+  };
+};

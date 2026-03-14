@@ -1,0 +1,4 @@
+source;share/hare_msgs/local_setup.bash
+source;share/hare_msgs/local_setup.dsv
+source;share/hare_msgs/local_setup.sh
+source;share/hare_msgs/local_setup.zsh

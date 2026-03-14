@@ -1,0 +1,9 @@
+locomotion_node:
+  ros__parameters:
+
+    wheel_radius: 0.15
+    track_width: 0.4572
+    gear_ratio: 50.0
+
+    left_motor_ids: [10, 40, 60]
+    right_motor_ids: [20, 30, 50]

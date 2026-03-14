@@ -22,4 +22,38 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+
+# include headers
+include_directories(include)
+
+# executable
+add_executable(can_interface_node
+  src/can_interface_node.cpp
+  src/vesc_can.cpp
+)
+
+ament_target_dependencies(
+  can_interface_node
+  rclcpp
+  hare_msgs
+)
+
+# install binary
+install(TARGETS
+  can_interface_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+# install headers
+install(
+  DIRECTORY include/
+  DESTINATION include/
+)
+
+# install config files
+install(
+  DIRECTORY config
+  DESTINATION share/${PROJECT_NAME}
+)
+
 ament_package()

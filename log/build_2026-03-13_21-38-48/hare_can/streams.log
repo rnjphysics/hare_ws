@@ -1,0 +1,52 @@
+[0.009s] Invoking command in '/home/hare/hare_ws/build/hare_can': CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/home/hare/hare_ws/install/hare_locomotion:/home/hare/hare_ws/install/hare_can:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hare/hare_ws/build/hare_can -- -j12 -l12
+[0.035s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.242s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.267s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.275s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.286s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.298s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.357s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.358s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.424s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.484s] -- Found hare_msgs: 0.0.0 (/home/hare/hare_ws/install/hare_msgs/share/hare_msgs/cmake)
+[0.493s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.585s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.585s] -- Configured cppcheck include dirs: /home/hare/hare_ws/src/hare_can/include
+[0.585s] -- Configured cppcheck exclude dirs and/or files: 
+[0.586s] -- Added test 'lint_cmake' to check CMake code style
+[0.586s] -- Added test 'uncrustify' to check C / C++ code style
+[0.586s] -- Configured uncrustify additional arguments: 
+[0.587s] -- Added test 'xmllint' to check XML markup files
+[0.588s] -- Configuring done (0.6s)
+[0.599s] -- Generating done (0.0s)
+[0.602s] -- Build files have been written to: /home/hare/hare_ws/build/hare_can
+[0.641s] [ 33%] [32mBuilding CXX object CMakeFiles/can_interface_node.dir/src/can_interface_node.cpp.o[0m
+[0.641s] [ 66%] [32mBuilding CXX object CMakeFiles/can_interface_node.dir/src/vesc_can.cpp.o[0m
+[7.626s] [100%] [32m[1mLinking CXX executable can_interface_node[0m
+[7.933s] [100%] Built target can_interface_node
+[7.946s] Invoked command in '/home/hare/hare_ws/build/hare_can' returned '0': CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/home/hare/hare_ws/install/hare_locomotion:/home/hare/hare_ws/install/hare_can:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/hare/hare_ws/build/hare_can -- -j12 -l12
+[7.947s] Invoking command in '/home/hare/hare_ws/build/hare_can': CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/home/hare/hare_ws/install/hare_locomotion:/home/hare/hare_ws/install/hare_can:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hare/hare_ws/build/hare_can
+[7.955s] -- Install configuration: ""
+[7.956s] -- Installing: /home/hare/hare_ws/install/hare_can/lib/hare_can/can_interface_node
+[7.960s] -- Set non-toolchain portion of runtime path of "/home/hare/hare_ws/install/hare_can/lib/hare_can/can_interface_node" to ""
+[7.960s] -- Installing: /home/hare/hare_ws/install/hare_can/include/
+[7.960s] -- Installing: /home/hare/hare_ws/install/hare_can/include//hare_can
+[7.960s] -- Installing: /home/hare/hare_ws/install/hare_can/include//hare_can/vesc_can.hpp
+[7.961s] -- Installing: /home/hare/hare_ws/install/hare_can/share/hare_can/config
+[7.961s] -- Installing: /home/hare/hare_ws/install/hare_can/share/hare_can/config/can.yaml
+[7.961s] -- Up-to-date: /home/hare/hare_ws/install/hare_can/share/ament_index/resource_index/package_run_dependencies/hare_can
+[7.961s] -- Installing: /home/hare/hare_ws/install/hare_can/share/ament_index/resource_index/parent_prefix_path/hare_can
+[7.961s] -- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/environment/ament_prefix_path.sh
+[7.962s] -- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/environment/ament_prefix_path.dsv
+[7.962s] -- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/environment/path.sh
+[7.962s] -- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/environment/path.dsv
+[7.962s] -- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/local_setup.bash
+[7.962s] -- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/local_setup.sh
+[7.962s] -- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/local_setup.zsh
+[7.962s] -- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/local_setup.dsv
+[7.962s] -- Installing: /home/hare/hare_ws/install/hare_can/share/hare_can/package.dsv
+[7.962s] -- Up-to-date: /home/hare/hare_ws/install/hare_can/share/ament_index/resource_index/packages/hare_can
+[7.962s] -- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/cmake/hare_canConfig.cmake
+[7.962s] -- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/cmake/hare_canConfig-version.cmake
+[7.962s] -- Up-to-date: /home/hare/hare_ws/install/hare_can/share/hare_can/package.xml
+[7.964s] Invoked command in '/home/hare/hare_ws/build/hare_can' returned '0': CMAKE_PREFIX_PATH=/home/hare/hare_ws/install/hare_msgs:/home/hare/hare_ws/install/hare_locomotion:/home/hare/hare_ws/install/hare_can:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/hare/hare_ws/build/hare_can

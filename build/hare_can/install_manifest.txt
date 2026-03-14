@@ -1,3 +1,6 @@
+/home/hare/hare_ws/install/hare_can/lib/hare_can/can_interface_node
+/home/hare/hare_ws/install/hare_can/include//hare_can/vesc_can.hpp
+/home/hare/hare_ws/install/hare_can/share/hare_can/config/can.yaml
 /home/hare/hare_ws/install/hare_can/share/ament_index/resource_index/package_run_dependencies/hare_can
 /home/hare/hare_ws/install/hare_can/share/ament_index/resource_index/parent_prefix_path/hare_can
 /home/hare/hare_ws/install/hare_can/share/hare_can/environment/ament_prefix_path.sh

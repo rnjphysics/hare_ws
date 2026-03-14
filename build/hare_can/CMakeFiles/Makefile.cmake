@@ -667,4 +667,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/hare_can_uninstall.dir/DependInfo.cmake"
+  "CMakeFiles/can_interface_node.dir/DependInfo.cmake"
   )

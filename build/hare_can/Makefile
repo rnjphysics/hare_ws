@@ -197,6 +197,67 @@ hare_can_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hare_can_uninstall.dir/build.make CMakeFiles/hare_can_uninstall.dir/build
 .PHONY : hare_can_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named can_interface_node
+
+# Build rule for target.
+can_interface_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 can_interface_node
+.PHONY : can_interface_node
+
+# fast build rule for target.
+can_interface_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/can_interface_node.dir/build.make CMakeFiles/can_interface_node.dir/build
+.PHONY : can_interface_node/fast
+
+src/can_interface_node.o: src/can_interface_node.cpp.o
+.PHONY : src/can_interface_node.o
+
+# target to build an object file
+src/can_interface_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/can_interface_node.dir/build.make CMakeFiles/can_interface_node.dir/src/can_interface_node.cpp.o
+.PHONY : src/can_interface_node.cpp.o
+
+src/can_interface_node.i: src/can_interface_node.cpp.i
+.PHONY : src/can_interface_node.i
+
+# target to preprocess a source file
+src/can_interface_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/can_interface_node.dir/build.make CMakeFiles/can_interface_node.dir/src/can_interface_node.cpp.i
+.PHONY : src/can_interface_node.cpp.i
+
+src/can_interface_node.s: src/can_interface_node.cpp.s
+.PHONY : src/can_interface_node.s
+
+# target to generate assembly for a file
+src/can_interface_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/can_interface_node.dir/build.make CMakeFiles/can_interface_node.dir/src/can_interface_node.cpp.s
+.PHONY : src/can_interface_node.cpp.s
+
+src/vesc_can.o: src/vesc_can.cpp.o
+.PHONY : src/vesc_can.o
+
+# target to build an object file
+src/vesc_can.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/can_interface_node.dir/build.make CMakeFiles/can_interface_node.dir/src/vesc_can.cpp.o
+.PHONY : src/vesc_can.cpp.o
+
+src/vesc_can.i: src/vesc_can.cpp.i
+.PHONY : src/vesc_can.i
+
+# target to preprocess a source file
+src/vesc_can.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/can_interface_node.dir/build.make CMakeFiles/can_interface_node.dir/src/vesc_can.cpp.i
+.PHONY : src/vesc_can.cpp.i
+
+src/vesc_can.s: src/vesc_can.cpp.s
+.PHONY : src/vesc_can.s
+
+# target to generate assembly for a file
+src/vesc_can.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/can_interface_node.dir/build.make CMakeFiles/can_interface_node.dir/src/vesc_can.cpp.s
+.PHONY : src/vesc_can.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +273,13 @@ help:
 	@echo "... test"
 	@echo "... hare_can_uninstall"
 	@echo "... uninstall"
+	@echo "... can_interface_node"
+	@echo "... src/can_interface_node.o"
+	@echo "... src/can_interface_node.i"
+	@echo "... src/can_interface_node.s"
+	@echo "... src/vesc_can.o"
+	@echo "... src/vesc_can.i"
+	@echo "... src/vesc_can.s"
 .PHONY : help
 
 

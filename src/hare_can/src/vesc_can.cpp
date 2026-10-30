@@ -33,7 +33,7 @@ bool VescCAN::sendFrame(uint32_t id, uint8_t *data, uint8_t len)
 {
     struct can_frame frame{};
 
-    frame.can_id = id;
+    frame.can_id = id | CAN_EFF_FLAG;   // EXTENDED FRAME
     frame.can_dlc = len;
 
     std::memcpy(frame.data, data, len);
@@ -118,14 +118,23 @@ int32_t VescCAN::unpackInt32(const uint8_t *data)
 
 int16_t VescCAN::unpackInt16(const uint8_t *data)
 {
-    return (data[0] << 8) |
-           data[1];
+    return static_cast<int16_t>(
+        (static_cast<uint16_t>(data[0]) << 8) |
+        static_cast<uint16_t>(data[1]));
+}
+
+bool VescCAN::isStatusFrame(const struct can_frame &frame, uint8_t command)
+{
+    const uint32_t can_id = frame.can_id & CAN_EFF_MASK;
+    return (frame.can_id & CAN_EFF_FLAG) != 0 &&
+           frame.can_dlc == 8 &&
+           ((can_id >> 8) & 0xFF) == command;
 }
 
 bool VescCAN::parseStatus1(const struct can_frame &frame, VescStatus1 &out)
 {
-    uint8_t cmd = (frame.can_id >> 8) & 0xFF;
-    if(cmd != 9) return false;
+    if (!isStatusFrame(frame, 9))
+        return false;
 
     out.erpm = unpackInt32(frame.data);
     out.current = unpackInt16(frame.data + 4) / 10.0;
@@ -136,30 +145,30 @@ bool VescCAN::parseStatus1(const struct can_frame &frame, VescStatus1 &out)
 
 bool VescCAN::parseStatus2(const struct can_frame &frame, VescStatus2 &out)
 {
-    uint8_t cmd = (frame.can_id >> 8) & 0xFF;
-    if(cmd != 14) return false;
+    if (!isStatusFrame(frame, 14))
+        return false;
 
-    out.amp_hours = unpackInt32(frame.data) / 10000.0;
-    out.amp_hours_charged = unpackInt32(frame.data + 4) / 10000.0;
+    out.amp_hours_charged = unpackInt32(frame.data) / 10000.0;
+    out.amp_hours = unpackInt32(frame.data + 4) / 10000.0;
 
     return true;
 }
 
 bool VescCAN::parseStatus3(const struct can_frame &frame, VescStatus3 &out)
 {
-    uint8_t cmd = (frame.can_id >> 8) & 0xFF;
-    if(cmd != 15) return false;
+    if (!isStatusFrame(frame, 15))
+        return false;
 
-    out.watt_hours = unpackInt32(frame.data) / 10000.0;
-    out.watt_hours_charged = unpackInt32(frame.data + 4) / 10000.0;
+    out.watt_hours_charged = unpackInt32(frame.data) / 10000.0;
+    out.watt_hours = unpackInt32(frame.data + 4) / 10000.0;
 
     return true;
 }
 
 bool VescCAN::parseStatus4(const struct can_frame &frame, VescStatus4 &out)
 {
-    uint8_t cmd = (frame.can_id >> 8) & 0xFF;
-    if(cmd != 16) return false;
+    if (!isStatusFrame(frame, 16))
+        return false;
 
     out.temp_fet = unpackInt16(frame.data) / 10.0;
     out.temp_motor = unpackInt16(frame.data + 2) / 10.0;
@@ -171,8 +180,8 @@ bool VescCAN::parseStatus4(const struct can_frame &frame, VescStatus4 &out)
 
 bool VescCAN::parseStatus5(const struct can_frame &frame, VescStatus5 &out)
 {
-    uint8_t cmd = (frame.can_id >> 8) & 0xFF;
-    if(cmd != 27) return false;
+    if (!isStatusFrame(frame, 27))
+        return false;
 
     out.tachometer = unpackInt32(frame.data);
     out.input_voltage = unpackInt16(frame.data + 4) / 10.0;

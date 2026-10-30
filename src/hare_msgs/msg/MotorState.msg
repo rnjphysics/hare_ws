@@ -12,3 +12,8 @@ float32 input_current
 float32 voltage
 
 int32 tachometer
+
+float32 amp_hours
+float32 amp_hours_charged
+float32 watt_hours
+float32 watt_hours_charged

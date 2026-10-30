@@ -56,15 +56,19 @@ private:
     std::thread rx_thread;
 
     void commandCallback(
-        const hare_msgs::msg::MotorCommandArray::SharedPtr msg)
+    const hare_msgs::msg::MotorCommandArray::SharedPtr msg)
+{
+    for (const auto &m : msg->motors)
     {
+        bool ok = vesc->sendRPM(m.rpm, m.id);
 
-        for(const auto &m : msg->motors)
-        {
-            vesc->sendRPM(m.rpm, m.id);
-        }
+        RCLCPP_INFO(this->get_logger(),
+            "Send RPM %d to motor %d -> %s",
+            m.rpm,
+            m.id,
+            ok ? "OK" : "FAIL");
     }
-
+}
     void receiveLoop()
     {
 
@@ -76,7 +80,8 @@ private:
             if(!vesc->receiveFrame(frame))
                 continue;
 
-            uint8_t id = frame.can_id & 0xFF;
+            uint32_t cid = frame.can_id & CAN_EFF_MASK;
+            uint8_t id = cid & 0xFF;
 
             VescStatus1 s1;
             if(VescCAN::parseStatus1(frame, s1))
@@ -88,6 +93,32 @@ private:
                 msg.erpm = s1.erpm;
                 msg.current = s1.current;
                 msg.duty = s1.duty;
+
+                state_pub->publish(msg);
+            }
+
+            VescStatus2 s2;
+            if(VescCAN::parseStatus2(frame, s2))
+            {
+
+                hare_msgs::msg::MotorState msg;
+
+                msg.id = id;
+                msg.amp_hours = s2.amp_hours;
+                msg.amp_hours_charged = s2.amp_hours_charged;
+
+                state_pub->publish(msg);
+            }
+
+            VescStatus3 s3;
+            if(VescCAN::parseStatus3(frame, s3))
+            {
+
+                hare_msgs::msg::MotorState msg;
+
+                msg.id = id;
+                msg.watt_hours = s3.watt_hours;
+                msg.watt_hours_charged = s3.watt_hours_charged;
 
                 state_pub->publish(msg);
             }

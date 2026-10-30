@@ -60,5 +60,6 @@ private:
 
     static int32_t unpackInt32(const uint8_t *data);
     static int16_t unpackInt16(const uint8_t *data);
+    static bool isStatusFrame(const struct can_frame &frame, uint8_t command);
 
 };

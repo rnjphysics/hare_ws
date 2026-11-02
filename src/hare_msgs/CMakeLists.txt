@@ -13,6 +13,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MotorCommand.msg"
   "msg/MotorCommandArray.msg"
   "msg/MotorState.msg"
+  "msg/MotorTelemetry.msg"
+  "msg/VescStatus.msg"
 )
 # uncomment the following section in order to fill in
 # further dependencies manually.

@@ -1,7 +1,8 @@
 #include <rclcpp/rclcpp.hpp>
 
 #include "hare_msgs/msg/motor_command_array.hpp"
-#include "hare_msgs/msg/motor_state.hpp"
+#include "hare_msgs/msg/motor_telemetry.hpp"
+#include "hare_msgs/msg/vesc_status.hpp"
 
 #include "hare_can/vesc_can.hpp"
 
@@ -32,9 +33,14 @@ public:
                     this,
                     std::placeholders::_1));
 
-        state_pub =
-            create_publisher<hare_msgs::msg::MotorState>(
-                "/motor_states",
+        telemetry_pub =
+            create_publisher<hare_msgs::msg::MotorTelemetry>(
+                "/vesc_telemetry",
+                50);
+
+        status_pub =
+            create_publisher<hare_msgs::msg::VescStatus>(
+                "/vesc_status",
                 50);
 
         rx_thread =
@@ -51,7 +57,9 @@ private:
 
     rclcpp::Subscription<hare_msgs::msg::MotorCommandArray>::SharedPtr cmd_sub;
 
-    rclcpp::Publisher<hare_msgs::msg::MotorState>::SharedPtr state_pub;
+    rclcpp::Publisher<hare_msgs::msg::MotorTelemetry>::SharedPtr telemetry_pub;
+
+    rclcpp::Publisher<hare_msgs::msg::VescStatus>::SharedPtr status_pub;
 
     std::thread rx_thread;
 
@@ -87,67 +95,67 @@ private:
             if(VescCAN::parseStatus1(frame, s1))
             {
 
-                hare_msgs::msg::MotorState msg;
+                hare_msgs::msg::MotorTelemetry msg;
 
                 msg.id = id;
                 msg.erpm = s1.erpm;
                 msg.current = s1.current;
                 msg.duty = s1.duty;
 
-                state_pub->publish(msg);
+                telemetry_pub->publish(msg);
             }
 
             VescStatus2 s2;
             if(VescCAN::parseStatus2(frame, s2))
             {
 
-                hare_msgs::msg::MotorState msg;
+                hare_msgs::msg::VescStatus msg;
 
                 msg.id = id;
                 msg.amp_hours = s2.amp_hours;
                 msg.amp_hours_charged = s2.amp_hours_charged;
 
-                state_pub->publish(msg);
+                status_pub->publish(msg);
             }
 
             VescStatus3 s3;
             if(VescCAN::parseStatus3(frame, s3))
             {
 
-                hare_msgs::msg::MotorState msg;
+                hare_msgs::msg::VescStatus msg;
 
                 msg.id = id;
                 msg.watt_hours = s3.watt_hours;
                 msg.watt_hours_charged = s3.watt_hours_charged;
 
-                state_pub->publish(msg);
+                status_pub->publish(msg);
             }
 
             VescStatus4 s4;
             if(VescCAN::parseStatus4(frame, s4))
             {
 
-                hare_msgs::msg::MotorState msg;
+                hare_msgs::msg::VescStatus msg;
 
                 msg.id = id;
                 msg.temp_fet = s4.temp_fet;
                 msg.temp_motor = s4.temp_motor;
                 msg.input_current = s4.current_in;
 
-                state_pub->publish(msg);
+                status_pub->publish(msg);
             }
 
             VescStatus5 s5;
             if(VescCAN::parseStatus5(frame, s5))
             {
 
-                hare_msgs::msg::MotorState msg;
+                hare_msgs::msg::VescStatus msg;
 
                 msg.id = id;
                 msg.voltage = s5.input_voltage;
                 msg.tachometer = s5.tachometer;
 
-                state_pub->publish(msg);
+                status_pub->publish(msg);
             }
         }
     }

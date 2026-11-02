@@ -14,6 +14,7 @@ from rclpy.node import Node
 VESC_IDS = (10, 20, 30, 40, 50, 60)
 TELEMETRY_STALE_SECONDS = 0.25
 STATUS_STALE_SECONDS = 3.0
+ROS_SERVICE = 'hare-ros.service'
 
 
 def find_tailscale_address():
@@ -127,6 +128,41 @@ class WebNode(Node):
 
 class RequestHandler(BaseHTTPRequestHandler):
     cache = None
+    ros_lock = threading.Lock()
+
+    def _send_json(self, payload, status=200):
+        body = json.dumps(payload).encode('utf-8')
+        self.send_response(status)
+        self.send_header('Content-Type', 'application/json')
+        self.send_header('Content-Length', str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
+
+    def _ros_state(self):
+        result = subprocess.run(
+            ['systemctl', '--user', 'is-active', ROS_SERVICE],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        return result.stdout.strip() or 'inactive'
+
+    def _ros_action(self, action):
+        if action not in ('start', 'stop'):
+            return self._send_json({'error': 'unsupported action'}, 400)
+        with self.ros_lock:
+            result = subprocess.run(
+                ['systemctl', '--user', action, ROS_SERVICE],
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+        if result.returncode != 0:
+            return self._send_json({
+                'error': result.stderr.strip() or f'ROS {action} failed',
+                'state': self._ros_state(),
+            }, 500)
+        return self._send_json({'state': self._ros_state()})
 
     def do_GET(self):
         if self.path == '/':
@@ -134,15 +170,22 @@ class RequestHandler(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header('Content-Type', 'text/html; charset=utf-8')
         elif self.path == '/api/status':
-            body = json.dumps(self.cache.snapshot()).encode('utf-8')
-            self.send_response(200)
-            self.send_header('Content-Type', 'application/json')
+            payload = self.cache.snapshot()
+            payload['ros_state'] = self._ros_state()
+            return self._send_json(payload)
         else:
             self.send_error(404)
             return
         self.send_header('Content-Length', str(len(body)))
         self.end_headers()
         self.wfile.write(body)
+
+    def do_POST(self):
+        if self.path == '/api/ros/start':
+            return self._ros_action('start')
+        if self.path == '/api/ros/stop':
+            return self._ros_action('stop')
+        self.send_error(404)
 
     def log_message(self, format_string, *args):
         return
@@ -167,6 +210,9 @@ padding:.3rem 0; } .label { color:#9eacbd; } .warn { color:#f0b44d; }
 <body>
 <h1>Hare VESC Status</h1>
 <p id="updated">Waiting for telemetry...</p>
+<p>ROS: <strong id="ros-state">unknown</strong>
+<button onclick="rosAction('start')">Start ROS</button>
+<button onclick="rosAction('stop')">Stop ROS</button></p>
 <main class="grid" id="cards"></main>
 <script>
 function value(v, digits=2) {
@@ -180,6 +226,7 @@ function row(label, v, digits=2) {
 async function refresh() {
   const response = await fetch("/api/status", {cache:"no-store"});
   const data = await response.json();
+  document.getElementById("ros-state").textContent = data.ros_state;
   document.getElementById("updated").textContent =
     "Updated " + new Date(data.generated_at_unix * 1000).toLocaleTimeString();
   document.getElementById("cards").innerHTML = data.vescs.map(v => {
@@ -196,6 +243,12 @@ async function refresh() {
       row("Amp-hours", s.amp_hours) + row("Watt-hours", s.watt_hours) +
       `</section>`;
   }).join("");
+}
+async function rosAction(action) {
+  const response = await fetch("/api/ros/" + action, {method:"POST"});
+  const data = await response.json();
+  document.getElementById("ros-state").textContent = data.state || data.error;
+  setTimeout(refresh, 500);
 }
 setInterval(refresh, 1000); refresh();
 </script>

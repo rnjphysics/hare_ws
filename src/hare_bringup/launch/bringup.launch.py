@@ -37,11 +37,4 @@ def generate_launch_description():
             output='screen'
         ),
 
-        Node(
-            package='hare_web',
-            executable='status_server',
-            name='hare_web',
-            output='screen'
-        ),
-
     ])

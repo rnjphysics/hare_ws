@@ -1,0 +1,14 @@
+[Unit]
+Description=Hare web status page
+After=network-online.target tailscaled.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/hare/hare_ws
+ExecStart=/bin/bash -lc 'source /opt/ros/jazzy/setup.bash && source /home/hare/hare_ws/install/setup.bash && exec ros2 run hare_web status_server'
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

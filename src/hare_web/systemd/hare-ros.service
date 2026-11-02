@@ -1,0 +1,12 @@
+[Unit]
+Description=Hare ROS bringup
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/hare/hare_ws
+ExecStart=/bin/bash -lc 'source /opt/ros/jazzy/setup.bash && source /home/hare/hare_ws/install/setup.bash && exec ros2 launch hare_bringup bringup.launch.py'
+Restart=no
+
+[Install]
+WantedBy=default.target
